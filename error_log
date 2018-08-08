@@ -1,0 +1,25 @@
+[05-Nov-2016 09:16:19 UTC] PHP Fatal error:  Call to a member function getMethodInstance() on a non-object in /home/trendycounty/public_html/subdomain/tcstaging/app/code/community/Phoenix/CashOnDelivery/Model/Sales/Invoice/Total.php on line 27
+[05-Nov-2016 09:23:51 UTC] PHP Fatal error:  Uncaught exception 'Mage_Api_Exception' with message 'order_not_exists' in /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Api/Model/Resource/Abstract.php:103
+Stack trace:
+#0 /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Sales/Model/Order/Shipment/Api.php(138): Mage_Api_Model_Resource_Abstract->_fault('order_not_exist...')
+#1 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/invoicing.php(180): Mage_Sales_Model_Order_Shipment_Api->create(NULL)
+#2 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/invoicing.php(247): _submitShipment(Object(Mage_Sales_Model_Order))
+#3 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/invoicing.php(337): completeMyOrder('100000425')
+#4 {main}
+  thrown in /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Api/Model/Resource/Abstract.php on line 103
+[05-Nov-2016 15:04:51 UTC] PHP Fatal error:  Uncaught exception 'Mage_Core_Exception' with message 'Please check shipping address information. Please enter the street.' in /home/trendycounty/public_html/subdomain/tcstaging/app/Mage.php:595
+Stack trace:
+#0 /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Sales/Model/Service/Quote.php(298): Mage::throwException('Please check sh...')
+#1 /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Sales/Model/Service/Quote.php(222): Mage_Sales_Model_Service_Quote->_validate()
+#2 /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Mage/Sales/Model/Service/Quote.php(238): Mage_Sales_Model_Service_Quote->submitNominalItems()
+#3 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/checkout.php(275): Mage_Sales_Model_Service_Quote->submitAll()
+#4 {main}
+  thrown in /home/trendycounty/public_html/subdomain/tcstaging/app/Mage.php on line 595
+[13-Nov-2016 09:38:16 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/list-product1.php on line 25
+[13-Nov-2016 09:38:31 UTC] PHP Fatal error:  Uncaught exception 'Zend_Db_Select_Exception' with message 'Unrecognized method 'load()'' in /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Zend/Db/Select.php:1377
+Stack trace:
+#0 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/list-product1.php(25): Zend_Db_Select->__call('load', Array)
+#1 /home/trendycounty/public_html/subdomain/tcstaging/mobileapi/list-product1.php(25): Varien_Db_Select->load()
+#2 {main}
+  thrown in /home/trendycounty/public_html/subdomain/tcstaging/app/code/core/Zend/Db/Select.php on line 1377
+[19-Nov-2016 01:22:43 UTC] PHP Fatal error:  Call to a member function getSource() on a non-object in /home/trendycounty/public_html/mobileapi/lib/global.php on line 345
